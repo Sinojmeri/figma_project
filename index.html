@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -11,6 +12,7 @@
     rel="stylesheet">
   <title>Figma page</title>
 </head>
+
 <body class="bg-[#252B42] text-white font-Montserrat font-bold ">
   <script type="module" src="/main.js"></script>
   <nav class="text-white flex flex-col md:flex-row mx-10 md:justify-center md:mt-2 md:items-center">
@@ -52,7 +54,7 @@
       <!--Row div-->
       <div class="flex md:flex-row h-full flex-col mt-10 mx-2 gap-3 justify-between">
         <!--White box 1-->
-        <div class="md:h-full w-[292px] bg-white even:bg-gray-100">
+        <div class="md:h-full w-[292px] bg-white">
           <div class="flex flex-col px-10 py-10">
             <img src="/Images/smile_face.jpg" alt="smile_face_img" class="h-[76px] w-[70px]">
             <h2 class="text-[16px] text-[#252B42] pt-2">Books Liberary</h2>
@@ -63,7 +65,7 @@
           </div>
         </div>
         <!--White box 2-->
-        <div class="h-full w-[292px] bg-white even:bg-gray-100 md:even:mt-[50px]">
+        <div class="h-full w-[292px] bg-white md:even:mt-[50px]">
           <div class="flex flex-col px-10 py-10">
             <img src="/Images/double_tik.jpg" alt="double_tik_img" class="h-[76px] w-[70px]">
             <h2 class="text-[16px] text-[#252B42] pt-2">Evaluation Time</h2>
@@ -74,7 +76,7 @@
           </div>
         </div>
         <!--White box 3-->
-        <div class="h-full w-[292px] bg-white even:bg-gray-100">
+        <div class="h-full w-[292px] bg-white">
           <div class="flex flex-col px-10 py-10">
             <img src="/Images/card.png" alt="double_tik_img" class="h-[76px] w-[70px]">
             <h2 class="text-[16px] text-[#252B42] pt-2">Market Analysis</h2>
@@ -85,7 +87,7 @@
           </div>
         </div>
         <!--White box 4-->
-        <div class="h-full w-[292px] bg-white even:bg-gray-100 md:even:mt-[50px]">
+        <div class="h-full w-[292px] bg-white  md:even:mt-[50px]">
           <div class="flex flex-col px-10 py-10">
             <img src="/Images/audio.jpg" alt="double_tik_img" class="h-[76px] w-[70px]">
             <h2 class="text-[16px] text-[#252B42] pt-2">Evaluation Time</h2>
@@ -107,27 +109,85 @@
         <p class="text-[14px] font-normal">Problems trying to resolve the conflict between<br />
           the two major realms of Classical physics: Newtonian mechanics </p>
       </div>
-      <!-- Main Div -->
-      <div class="flex flex-row justify-around my-10">
-        <!-- Row Div -->
-        <div class="flex flex-row justify-between px-2 gap-2 w-[80%]">
-          <!--White box 1 div-->
-          <div class="flex flex-col p-1 bg-white w-[292px]">
-            bla bla bla
+      <!-- Row Div -->
+      <div class="flex md:flex-row flex-col justify-between px-2 gap-2 my-8">
+        <!--White box 1 div-->
+        <div class="flex flex-col p-1 w-[292px] max-h-[658px]">
+          <!--Lapsat-->
+          <div class="flex flex-col bg-cover bg-center h-[300px]" style="background-image: url('/Images/Lapsat.jpg');">
+            <button class="p-[10px] mt-[20px] ml-[20px] bg-[#E74040] w-[51px] rounded-[3px] shadow-custom">Sale</button>
+            <div class="flex flex-row self-center gap-2 justify-between mt-auto mb-4">
+              <img src="Images/like.svg" alt="heart img" />
+              <img src="/Images/basket.png" alt="basket img" />
+              <img src="Images/syri.png" alt="syri img" />
+            </div>
           </div>
-          <!--White box 2 div-->
-          <div class="flex flex-col p-1 bg-white w-[292px]">
-            bla bla bla
-          </div>
-          <!--White box 3 div-->
-          <div class="flex flex-col p-1 bg-white w-[292px]">
-            bla bla bla
-          </div>
-          <!--White box 4 div-->
-          <div class="flex flex-col p-1 bg-white w-[292px]">
-            bla bla bla
+          <div class="flex flex-col bg-[#FFFFFF]">
+            <div class="p-[10px] flex flex-col">
+              <!-- First row  -->
+              <div class="flex flex-row justify-between items-center">
+                <h2 class="text-[14px] text-[#23A6F0]">English</h2>
+                <div class=" flex flex-row items-center gap-1 bg-[#252B42] p-[5px] rounded-[20px]">
+                  <img class="h-[80%]" src="Images/star.png" alt="star">
+                  <p>4.9</p>
+                </div>
+              </div>
+              <!-- 2 rows of text  -->
+              <div class="flex flex-col gap-2 my-1">
+                <h2 class="text-[#252B42]">Graphic Design</h2>
+                <p class="text-[#737373]">We focus on ergonomics
+                  and meeting you....</p>
+              </div>
+              <!-- 15 sales div  -->
+              <div class="flex flex-row my-2 gap-3 items-center">
+                <img src="/Images/Download.png" alt="download img" class="">
+                <p class="text-[#737373] text-[14px]">15 Sales</p>
+              </div>
+              <!-- next div  -->
+              <div class="flex flex-row gap-3">
+                <p class="text-[#BDBDBD]">$16.48</p>
+                <p class="text-[#40BB15]">$6.48</p>
+              </div>
+              <!-- Icon row  div-->
+              <div class="flex md:flex-row flex-col gap-2 md:items-center items-start">
+                <!--See how to make them responsive-->
+                <div class="flex flex-row gap-1 justify-center items-center">
+                  <img src="/Images/Clock.png" alt="clock" class="h-[14px]">
+                  <p class="text-[#737373]">Pro...</p>
+                </div>
+                <div class="flex flex-row gap-1 justify-center items-center">
+                  <img src="Images/graph.png" alt="graph" class="h-[14px]">
+                  <p class="text-[#737373]">64 Les...</p>
+                </div>
+                <div class="flex flex-row gap-1 justify-center items-center">
+                  <img src="/Images/Clock.png" alt="clock" class="h-[14px]">
+                  <p class="text-[#737373]">22hr..</p>
+                </div>
+              </div>
+              <!-- Last button div  -->
+              <div class="my-3">
+                <div class="flex flex-row rounded-[37px] border-[1px] border-[#23A6F0] h-[54px] py-[10px] px-[20px] w-[70%] items-center justify-between">
+                    <p class="text-[#23A6F0]">Learn More</p>
+                    <img src='Images/Vector.png' alt="vector" class="h-[16px]">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <!--White box 2 div-->
+        <div class="flex flex-col p-1 bg-white w-[292px]">
+          bla bla bla
+        </div>
+        <!--White box 3 div-->
+        <div class="flex flex-col p-1 bg-white w-[292px]">
+          bla bla bla
+        </div>
+        <!--White box 4 div-->
+        <div class="flex flex-col p-1 bg-white w-[292px]">
+          bla bla bla
+        </div>
       </div>
+    </div>
 </body>
+
 </html>
