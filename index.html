@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en">
+<!-- Figma Webpage URL:
+https://www.figma.com/file/HTNUcSan8B3qrlTRrQRbNK/Course-Clever---Simple%C2%A0website-template%C2%A0for-beginners-for-course-(Community)?type=design&node-id=2-71&mode=design&t=5XnCOhdURM5qdWJK-0 -->
 
 <head>
   <meta charset="UTF-8" />
@@ -367,13 +369,13 @@
     </div>
   </div>
   <!--Layout 4 -->
-  <div id="Layout4" class="flex justify-center">
-    <div class="flex flex-row justify-between items-center w-[70%]">
-      <img class="max-h-[485px]" src="Images/Female logo.png" alt="female logo thinking">
+  <div id="Layout4" class="container mx-auto">
+    <div class="flex md:flex-row flex-col justify-center items-center gap-[10vw]">
+      <img class="md:w-[25vw] w-1/2" src="Images/Female logo.png" alt="female logo thinking">
       <div class="flex flex-col items-start gap-[40px] flex-wrap">
         <div class="h-[7px] bg-[#E74040] w-[94px]"></div>
         <h1 class="text-[40px]">Watch our Courses</h1>
-        <p class="text-[14px] md:w-[351px]">Problems trying to resolve the conflict between
+        <p class="text-[14px] max-w-[351px]">Problems trying to resolve the conflict between
           the two major realms of Classical physics:
           Newtonian mechanics </p>
         <a href="#Layout4" class="flex flex-row gap-[10px] items-center h-[24px]">
@@ -393,11 +395,11 @@
           the two major realms of Classical physics: Newtonian mechanics </p>
       </div>
       <!--Row of 2 boxes-->
-      <div class="flex flex-row gap-[30px] my-14 mx-4">
+      <div class="flex flex-col md:flex-row gap-[30px] my-14 mx-4 items-center">
         <!-- White box 1  -->
-        <div class="bg-white md:w-[501px] w-[250px] flex flex-col justify-center items-center gap-5">
+        <div class="bg-white flex flex-col justify-center items-center gap-5 max-w-[200px] md:max-w-fit">
           <img src="/Images/fmchina.png" alt="pic of a female" class="rounded-[200px] h-[128px] w-[128px] mt-3">
-          <p class="text-[#737373] text-[14px] md:w-[341px] text-center text-wrap">Slate helps you see how many more
+          <p class="text-[#737373] text-[14px] text-center text-wrap">Slate helps you see how many more
             days
             you need to work to reach your financial
             goal for the month and year.</p>
@@ -414,9 +416,9 @@
           </div>
         </div>
         <!--White box 2-->
-        <div class="bg-white md:w-[501px] w-[250px] flex flex-col justify-center items-center gap-5">
+        <div class="bg-white max-w-[200px] md:max-w-fit flex flex-col justify-center items-center gap-5">
           <img src="/Images/fmeuro.png" alt="pic of a female" class="rounded-[200px] h-[128px] w-[128px] mt-3">
-          <p class="text-[#737373] text-[14px] md:w-[341px] text-center text-wrap">Slate helps you see how many more
+          <p class="text-[#737373] text-[14px] max-w-[200px] md:max-w-fit text-center text-wrap">Slate helps you see how many more
             days
             you need to work to reach your financial
             goal for the month and year.</p>
@@ -437,15 +439,13 @@
   </div>
   <!--Layout 6-->
   <div class="flex md:justify-center my-7 box-content">
-    <div class="flex flex-col md:w-[80%] md:items-center">
-      <div class="flex flex-col md:text-center mb-16 ml-2"> <!--Text div-->
-        <p class="text-[#23A6F0]">Practice advice</p>
-        <h1 class="text-[40px]">Join Us</h1>
-        <p class="text-[14px] font-[400px]">Problems trying to resolve the conflict between<br />
-          the two major realms of Classical physics: Newtonian mechanics </p>
-      </div>
+    <div class="flex flex-col md:text-center w-full"> <!--Text div-->
+      <p class="text-[#23A6F0]">Practice advice</p>
+      <h1 class="text-[40px]">Join Us</h1>
+      <p class="text-[14px]">Problems trying to resolve the conflict between<br />
+        the two major realms of Classical physics: Newtonian mechanics </p>
       <form name="search"
-        class="w-[688px] h-[58px] rounded-[5px] border-[1px] bg-white flex flex-row items-center justify-between ml-2">
+        class=" min-w-[200px] max-w-[600px] w-[50vw] rounded-[5px] border-[1px] bg-white flex flex-row items-center justify-between mx-auto">
         <input type="text" id="search" placeholder="Your email:" class="text-[#737373] ml-[20px] w-full">
         <div
           class="h-full rounded-t-[5px] rounded-r-[5px] rounded-l-none border-[#E6E6E6] bg-[#23A6F0] w-[117px] justify-center">
@@ -457,10 +457,10 @@
     </div>
   </div>
   <!--Layout 7-->
-  <div class="flex bg-white md:justify-center my-7 box-content">
-    <div class="flex flex-row md:items-center">
+  <div class="bg-white w-full">
+    <div class="flex flex-col md:flex-row md:items-center justify-center gap-10">
       <!--Col 1-->
-      <div class="flex w-full">
+      <div class="flex">
         <ul class="flex flex-col  gap-[25px]">
           <li class="text-[#252B42] text-[24px] list-none">Get In Touch</li>
           <p class="text-[#737373] text-[14px] font-normal">the quick fox jumps over the lazy dog</p>
@@ -473,7 +473,7 @@
         </ul>
       </div>
       <!--Col 2-->
-      <div class="flex w-full items-start">
+      <div class="flex  items-start">
         <ul class="flex flex-col  gap-[25px] text-[#737373] text-[14px]">
           <li class="text-[#252B42] text-[24px] list-none">Company info</li>
           <a href="#">
@@ -491,7 +491,7 @@
         </ul>
       </div>
       <!--Col 3-->
-      <div class="flex w-full items-start">
+      <div class="flex  items-start">
         <ul class="flex flex-col  gap-[25px] text-[#737373] text-[14px]">
           <li class="text-[#252B42] text-[24px] list-none">Features</li>
           <a href="#">
@@ -509,7 +509,7 @@
         </ul>
       </div>
       <!--Col 4-->
-      <div class="flex w-full items-start">
+      <div class="flex  items-start">
         <ul class="flex flex-col  gap-[25px] text-[#737373] text-[14px]">
           <li class="text-[#252B42] text-[24px] list-none">Resources</li>
           <a href="#">
