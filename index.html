@@ -14,25 +14,29 @@ https://www.figma.com/file/HTNUcSan8B3qrlTRrQRbNK/Course-Clever---Simple%C2%A0we
     rel="stylesheet">
   <title>Figma page</title>
 </head>
-
 <body class="bg-[#252B42] text-white font-Montserrat font-bold ">
   <script type="module" src="/main.js"></script>
-  <nav class="text-white flex flex-col md:flex-row md:mx-10 mx-5 md:justify-between md:mt-2 md:items-center w-[80%]">
-    <div class="flex md:flex-row flex-col md:items-center items-start mr-4">
+  <nav class="text-white flex flex-row md:mx-10 mx-5 md:justify-between mt-4 md:items-center w-[80%]">
+    <div class="flex flex-row items-center gap-2 mr-4">
       <h1 class="md:text-3xl md:mr-16 md:ml-5 p-0 ">BrandName</h1>
-      <ul class="flex flex-col md:flex-row md:gap-4">
+      <div id="vizat" class="md:flex flex-col relative">
+        <div class="md:hidden bg-white h-1 border-white rounded-sm w-5 my-1"></div>
+        <div class="md:hidden bg-white h-1 border-white rounded-sm w-5 my-1"></div>
+        <div class="md:hidden bg-white h-1 border-white rounded-sm w-5 my-1"></div>
+      <ul id="lista" class="hidden md:flex md:flex-row md:gap-4 md:visible">
         <li><a href="#">Home</a></li>
         <li><a href="#">Product</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+      </div>
     </div>
-    <ul class="flex flex-col md:flex-row md:gap-6 md:items-center md:pr-5">
+    <ul class="flex md:flex-row md:gap-6 gap-2 items-center md:pr-5">
       <li><a href="#">Login</a></li>
-      <li><button class="h-14 bg-[#23A6F0] w-[137px] rounded-md">Join Us</button></li>
+      <li><button class="h-14 bg-[#23A6F0] md:w-[137px] w-[100px] rounded-md">Join Us</button></li>
     </ul>
   </nav>
-  <div class=" flex flex-row justify-between pt-5 md:mx-10 mx-5 sm:ml-0">
+  <div class=" flex flex-row justify-between pt-5 md:mx-10 mx-5 sm:ml-0 my-16">
     <div class="md:flex flex-col md:w-[40%] md:items-start md:px-8 md:justify-center">
       <h2 class='text-[#23A6F0]'>Welcome</h2>
       <h1 class="text-[20px] md:text-[58px] py-7">Sell on the web <br /> like a pro</h1>
@@ -532,6 +536,7 @@ https://www.figma.com/file/HTNUcSan8B3qrlTRrQRbNK/Course-Clever---Simple%C2%A0we
   </div>
   </div>
   </div>
+  <script src="main.js"></script>
 </body>
 
 </html>
