@@ -14,37 +14,37 @@ https://www.figma.com/file/HTNUcSan8B3qrlTRrQRbNK/Course-Clever---Simple%C2%A0we
     rel="stylesheet">
   <title>Figma page</title>
 </head>
-<body class="bg-[#252B42] text-white font-Montserrat font-bold ">
+<body class="bg-[#252B42] text-white font-Montserrat font-bold border-solid border-green-500 border-[23px] ">
   <script type="module" src="/main.js"></script>
-  <nav class="text-white flex flex-row md:mx-10 mx-5 md:justify-between mt-4 md:items-center w-[80%]">
+  <nav class="text-white flex flex-row md:mx-10 mx-3 md:justify-between mt-4 md:items-center w-[80%]">
     <div class="flex flex-row items-center gap-2 mr-4">
-      <h1 class="md:text-3xl md:mr-16 md:ml-5 p-0 ">BrandName</h1>
-      <div class="flex-col relative">
-        <div id="vizat" class="md:hidden">
-        <div class="md:hidden bg-white h-1 border-white rounded-sm w-5 my-1"></div>
-        <div class="md:hidden bg-white h-1 border-white rounded-sm w-5 my-1"></div>
-        <div class="md:hidden bg-white h-1 border-white rounded-sm w-5 my-1"></div>
+      <h1 id="brandname" class="md:text-3xl md:mr-16 md:ml-5 p-0">BrandName</h1>
+      <div id="container">
+        <div id="vizat" class="md:hidden flex-col">
+          <div class="md:hidden bg-white h-1 border-white rounded-sm w-5 my-1"></div>
+          <div class="md:hidden bg-white h-1 border-white rounded-sm w-5 my-1"></div>
+          <div class="md:hidden bg-white h-1 border-white rounded-sm w-5 my-1"></div>
         </div>
-        <ul id="lista" class="hidden md:flex md:flex-row md:gap-4 md:visible">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Product</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
+        <ul id="lista" class="hidden md:flex md:flex-row md:gap-4 md:visible absolute">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </div>
-    <ul class="flex md:flex-row md:gap-6 gap-2 items-center md:pr-5">
+    <ul id="register" class="flex md:flex-row md:gap-6 gap-2 items-center md:pr-5">
       <li><a href="#">Login</a></li>
       <li><button class="h-14 bg-[#23A6F0] md:w-[137px] w-[100px] rounded-md">Join Us</button></li>
     </ul>
   </nav>
-  <div class=" flex flex-row justify-between pt-5 md:mx-10 mx-5 sm:ml-0 my-16">
-    <div class="md:flex flex-col md:w-[40%] md:items-start md:px-8 md:justify-center">
+  <div class=" flex flex-row justify-between pt-5 md:mx-10 mx-2 sm:ml-0 my-16">
+    <div class="md:flex flex-col md:w-[40%] md:items-start md:px-5 md:justify-center">
       <h2 class='text-[#23A6F0]'>Welcome</h2>
       <h1 class="text-[20px] md:text-[58px] py-7">Sell on the web <br /> like a pro</h1>
       <p class="text-[1.25rem] font-normal w-full">We know how large objects will act, <br /> but things on a small
         scale</p>
-      <div class="flex flex-row gap-2 pt-1 h-[52px] sm:mr-5">
+      <div class="flex flex-row gap-2 pt-1 h-[52px] sm:mr-4">
         <button class='bg-[#23A6F0] rounded-md w-[150px] text-[14px]'>Get Quote Now</button>
         <button class="text-[#23A6F0] w-[150px] text-[14px] border rounded-md border-[#23A6F0] p-1">Learn More</button>
       </div>
@@ -54,7 +54,7 @@ https://www.figma.com/file/HTNUcSan8B3qrlTRrQRbNK/Course-Clever---Simple%C2%A0we
     </div>
   </div>
   <!--Layout 2-->
-  <div class="flex md:justify-center my-7 box-content">
+  <div class="flex md:justify-center my-7 box-content ml-1">
     <div class="flex flex-col md:w-[80%] justify-start">
       <div class="flex flex-col"> <!--Text div-->
         <p class="text-[#23A6F0]">Practice advice</p>
@@ -114,7 +114,7 @@ https://www.figma.com/file/HTNUcSan8B3qrlTRrQRbNK/Course-Clever---Simple%C2%A0we
   <!--Layout 3-->
   <div class="flex md:justify-center my-14 box-content">
     <div class="flex flex-col md:w-[80%] justify-start">
-      <div class="flex flex-col"> <!--Text div-->
+      <div class="flex flex-col ml-2"> <!--Text div-->
         <p class="text-[#23A6F0]">Practice advice</p>
         <h1 class="text-[40px]">Make online education accessible</h1>
         <p class="text-[14px] font-normal">Problems trying to resolve the conflict between<br />
@@ -424,7 +424,8 @@ https://www.figma.com/file/HTNUcSan8B3qrlTRrQRbNK/Course-Clever---Simple%C2%A0we
         <!--White box 2-->
         <div class="bg-white max-w-[200px] md:max-w-fit flex flex-col justify-center items-center gap-5">
           <img src="/Images/fmeuro.png" alt="pic of a female" class="rounded-[200px] h-[128px] w-[128px] mt-3">
-          <p class="text-[#737373] text-[14px] max-w-[200px] md:max-w-fit text-center text-wrap">Slate helps you see how many more
+          <p class="text-[#737373] text-[14px] max-w-[200px] md:max-w-fit text-center text-wrap">Slate helps you see how
+            many more
             days
             you need to work to reach your financial
             goal for the month and year.</p>
